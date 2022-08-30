@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/redtillogo.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/sweet_alert/sweetalert2.min.css">
+
+
+    <title>RedTIL</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <div class="bloque1">
+
+
+            
+            <img src="assets/img/redtillogo0.png" alt="" class="imgindex1">
+            <div class="sublogo">
+                <h5>Red Científica de Investigadores en Tecnologías de Información Libres</h5>
+            </div>
+            <div class="regis">
+                <div class="accede">
+                <form id="form_log" autocomplete="off">
+                <div><input type="text" autocomplete="off" id="correo" name="correo" required placeholder="Correo electrónico"> </div>             
+                <div><input type="password" autocomplete="off" id="clave" name="clave" required placeholder="Clave"></div>
+                <div><button type="submit" class="btnaccede">Ingresar</button> </div>                
+                </form>
+                <div class="olvido">
+                <a href="html/recuperacion.html" class="links">¿Olvidó su contraseña?</a>
+            </div>
+            </div>
+            </div>
+            
+
+        </div>
+        <div class="bloque2">
+       <div class="eslogan">
+            <!--<h5><img src="assets/img/buscar.png" alt="">  Busca</h5>
+                <h5><img src="assets/img/burbuja.png" alt="">  Comenta</h5>
+                <h5><img src="assets/img/search.png" alt="">  Comparte</h5> 
+                </div>-->
+            <div class="sesion">
+                <div class="box">                   
+                    <h4>¡Regístrate!</h4>
+                        <form autocomplete="off" id="form_reg" method="POST">
+                            <label for=""></label>
+                                <input type="hidden" id="url_perfil" name="url_perfil">  
+                                <input onKeyPress="return cedula_esp(event);" autocomplete="off" type="text" id="cedula" name="cedula" required class="form-control" placeholder="Cédula" data-toggle="tooltip" data-placement="right" title="La cédula debe tener 'V-', 'P-' para pasaporte, o 'E-' para identificación de extrajero delante de los dígitos. Además no puede tener más de 8 digitos. Ejemplo: V-12345678">                                                               
+                                <input type="text" class="form-control" autocomplete="off" id="nombre" name="nombre" required placeholder="Nombre" data-toggle="tooltip" data-placement="right" title="El nombre no puede contener caracteres especiales">                                                            
+                                <input type="text" class="form-control" autocomplete="off" id="apellido" name="apellido" required placeholder="Apellido" data-toggle="tooltip" data-placement="right" title="El apellido no puede contener caracteres especiales">                                                            
+                                <input type="text" class="form-control" autocomplete="off" id="correo_reg" name="correo_reg" required placeholder="Correo Electrónico">
+                                <input type="password" class="form-control" autocomplete="off" id="clave_reg" name="clave_reg" required placeholder="Clave" data-toggle="tooltip" data-placement="right" title="La clave debe contener al menos una letra mayúscula, una letra minúscula y un número">
+                                <input type="password" class="form-control" autocomplete="off" id="re_clave" name="re_clave" required placeholder="Repetir Clave" data-toggle="tooltip" data-placement="right" title="La clave debe coincidir con la ingresada en el campo anterior">
+                                <select class="btn boton2" id="presecret" name="presecret" >
+                                <option value="">Pregunta secreta</option>
+                                <option value="¿Cuál es el nombre de mi mascota?">¿Cuál es el nombre de mi mascota?</option>
+                                <option value="¿Cuál es mi libro favorito?">¿Cuál es mi libro favorito?</option>
+                                <option value="¿Nombre de mi ex-novi@?">¿Nombre de mi ex-novi@?</option>
+                                <option value="¿Cuál es el nombre de mi escuela primaria?">¿Cuál es el nombre de mi escuela primaria?</option>
+                                </select>
+                                <input type="text" class="form-control" autocomplete="off" id="resecret" name="resecret" required placeholder="Respuesta secreta">
+                                          <select onchange="cabestado();" name="estado" id="estado" class="btn boton2" data-toggle="tooltip" data-placement="right" title="Por favor selecciona un estado">
+                                              <option value="">Estado</option>
+                                              <option value="AMAZONAS">AMAZONAS</option>
+                                              <option value="ANZOATEGUI">ANZOATEGUI</option>
+                                              <option value="APURE">APURE</option>
+                                              <option value="ARAGUA">ARAGUA</option>
+                                              <option value="BARINAS">BARINAS</option>
+                                              <option value="BOLIVAR">BOLIVAR</option>
+                                              <option value="CARABOBO">CARABOBO</option>
+                                              <option value="COJEDES">COJEDES</option>
+                                              <option value="DELTA AMACURO">DELTA AMACURO</option>
+                                              <option value="DISTRITO CAPITAL">DISTRITO CAPITAL</option>
+                                              <option value="FALCON">FALCON</option>
+                                              <option value="GUARICO">GUARICO</option>
+                                              <option value="LARA">LARA</option>
+                                              <option value="MERIDA">MERIDA</option>
+                                              <option value="MIRANDA">MIRANDA</option>
+                                              <option value="MONAGAS">MONAGAS</option>
+                                              <option value="NUEVA ESPARTA">NUEVA ESPARTA</option>
+                                              <option value="PORTUGUESA">PORTUGUESA</option>
+                                              <option value="SUCRE">SUCRE</option>
+                                              <option value="TACHIRA">TACHIRA</option>
+                                              <option value="TRUJILLO">TRUJILLO</option>
+                                              <option value="VARGAS">VARGAS</option>
+                                             <option value="YARACUY">YARACUY</option>
+                                              <option value="ZULIA">ZULIA</option>
+                                          </select>
+                                        <select name="municipio" id="municipio" class="btn boton2" data-toggle="tooltip" data-placement="right" title="Por favor selecciona un municipio">
+                                            <option value="">Municipio</option>
+                                        </select>
+                                <input type="text" name="ciudad" id="ciudad" class="form-control" maxlength="100" placeholder="Ciudad, Zona o Poblado" data-toggle="tooltip" data-placement="right" title="Por favor introduzca la ciudad, zona o poblado" autocomplete="off">
+                                <button type="submit" class="btn boton1" >Enviar</button>
+                            </form>
+                           
+                        </div>
+                     
+                                         
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.js"></script>    
+    <script src="assets/js/bootstrap.js"></script>
+    
+    <script src="assets/sweet_alert/sweetalert2.min.js"></script>
+    <script src="assets/js//jquery.validate.js"></script>
+    <script src="assets/js/index.js"></script>
+
+    <script src="assets/js/loader.js"></script>
+</body>
+
+</html>

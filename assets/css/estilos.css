@@ -1,0 +1,379 @@
+/******************GENERALIDADES**********************/
+
+@font-face{
+    font-family:"Montserrat";                 ;
+    src: url(./font/Montserrat-Medium.ttf);
+}
+
+html, body { 
+  height:100%; 
+  margin:0;
+  padding:0;
+}
+
+.contenedor {
+  display:flex;
+  flex-direction: row;
+  min-height:100%;
+}
+
+.contenedor > div {
+  flex:1;
+  display:flex;
+  flex-direction: column;
+    
+}
+
+/******************BLOQUE-IZQ**********************/
+
+label.error { float: none; color: red; padding-left: .5em; vertical-align: middle; font-size: 12px; }
+
+.bloque1 { 
+  background: rgb(6,17,97);
+background: linear-gradient(150deg, rgba(6,17,97,1) 0%, rgba(120,2,6,1) 100%, rgba(238,90,36,1) 100%);
+      
+    
+}
+
+.imgindex{
+    padding: 10px;
+    margin-left: 100px;    
+    width: 20%;
+}
+.imgindex1{
+    
+    position: absolute;
+    width: 30%;   
+    margin-top: 10%;
+    margin-left: 5%;
+    animation: fadeInLeft 1s linear;
+
+} 
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+
+.slogan{
+    margin-top: 300px;
+    z-index: 1;
+}
+
+.sublogo h5{ 
+    text-align: right;
+    padding: 40px;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 200px;
+    color: #f0f0f0; 
+    
+}
+
+.slogan h1{
+    font-family: "Montserrat";
+    margin-top: 100px;   
+    margin-right: 20px;
+    color: whitesmoke;
+    font-size: 1em;
+    text-align: right;
+    z-index: 1;
+    animation: slideInUp 1.5s linear;
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+
+.icon{
+  
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+/******************BLOQUE-DER**********************/
+
+.bloque2 { 
+    background-color: whitesmoke; 
+}
+
+.accede{    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding:0;
+    width: 60%;
+   }
+
+.accede input{
+    width: 100%;
+    margin: 5px;
+    background: white;
+    :-moz-background: rgb(105,105,105, 0.8);
+    border-radius: 65px;
+    border: none;   
+    height: 40px;    
+    align-items: center;
+    color: dimgray;
+    padding: 20px;
+    align-content: center;
+ 
+}
+
+.accede input:focus{
+    box-shadow: none;
+    outline: none;  
+}
+
+.accede input::placeholder{
+    color: dimgray;
+}
+
+.btnaccede{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 65px; 
+    color: dimgray;
+}
+
+.btnaccede:hover{
+    width: 100%;
+    height: 40px;   
+    background: dimgray;
+    border-radius: 65px;  
+    color: whitesmoke;
+}
+
+.boton1{
+    margin-top: 10px;
+    width: 100%;
+    height:40px;
+   
+    background-color: background: rgb(6,17,97);
+background: linear-gradient(150deg, rgba(6,17,97,1) 0%, rgba(120,2,6,1) 100%, rgba(238,90,36,1) 100%);
+    color: white;
+    font-style: bold;
+}
+
+.boton1:hover{
+    margin-top: 10px;
+    width: 100%;
+    height:40px;   
+    background-color: background: rgb(120,2,6);
+background: linear-gradient(150deg, rgba(120,2,6,1) 0%, rgba(6,17,97,1) 100%);
+    color: white;
+    font-style: bold;
+    
+}
+
+.boton2{
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 1px solid lightgrey; 
+    color: dimgrey;
+    font-style: bold;
+    text-decoration: none;
+  
+}
+
+
+.olvido{
+    position: relative;
+    margin-left: 2em;;
+    margin-right: auto;
+    
+}
+
+.olvido a{
+    color: whitesmoke; 
+}
+
+.box{    
+    border-color: lightblue;
+    
+    margin-top: 2%;
+    padding: 4%;
+    width: 60%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    border-radius: 15px;
+}
+
+.box input{
+    padding: 10px;
+    margin: 5px; 
+    border: none;
+
+}
+
+.box select{
+   padding: 5px;
+    margin: 5px;
+    height: 40px;
+    border: none;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
+.box::placeholder{
+    font-size: 2em;
+}
+
+.box h4{
+    animation: slideInUp 1s linear;
+}
+
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+.boton{
+    
+    width: 100%;
+    height: auto;
+    background:#009ce5;
+    margin-left: 5px;
+}
+
+.boton:hover{
+    
+    width: 100%;
+    height: auto;
+    border: 1px solid dimgrey;
+    background: #00eae2;
+    color: dimgray;
+    
+}
+
+.regis{
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+    padding: -50px;
+}
+
+.bloque2 img{
+    width: 25px;
+}
+
+.bloque2 h5{
+    color: dimgrey;
+   
+}
+.eslogan{
+    margin-left: 20%;
+    padding: 20px;
+}
+
+/******************loader**********************/
+
+.loader-page {
+    position: fixed;
+    z-index: 25000;
+    background: rgb(255, 255, 255);
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all .3s ease;
+  }
+  .loader-page::before {
+    content: "";
+    position: absolute;
+    border: 4px solid rgb(15, 60,231);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-left: 2px solid rgba(50, 150, 176,);
+    border-top: 2px solid rgba(50, 150, 176,0);
+    animation: rotarload 1s linear infinite;
+    transform: rotate(0deg);
+  }
+  @keyframes rotarload {
+      0%   {transform: rotate(0deg)}
+      100% {transform: rotate(360deg)}
+  }
+  .loader-page::after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgba(255, 111, 0,.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-left: 2px solid rgba(50, 150, 176, 0);
+    border-top: 2px solid rgba(50, 150, 176, 0);
+    animation: rotarload 1s ease-out infinite;
+    transform: rotate(0deg);
+  }

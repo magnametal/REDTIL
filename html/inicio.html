@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device‐width, initial‐scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/redtillogo.png">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/icons/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/sweet_alert/sweetalert2.min.css">
+    <title>RedTIL</title>
+</head>
+<body >   
+<div class="tapiz">
+    <nav class="navbar" style="background: transparent;">
+        <a class="navbar-brand"><img class="img-redtil" src="../assets/img/redtiwhite.png" alt=""></a>
+        <div class="dropleft">
+          <a class="navbar-right" id="ad_bot"><img style="visibility: hidden; opacity: 0;" id="ad_bot_img" src="../assets/img/admicon.png" class="avatar2"></a>
+            <a class="navbar-right" href="" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/img/Husky.jpg" class="avatar" id="ava_img" data-toggle="tooltip" data-placement="bottom" title="Ir a mi perfil"></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <h6 class="dropdown-header" id="avatar"></h6>
+                <a id="mi_enlace"><button class="dropdown-item" type="button"><img src="../assets/img/home.png" class="imgp">Inicio</button></a>
+                <button class="dropdown-item" type="button" onclick="out();"><img src="../assets/img/closeg.png" alt="" class="imgp">Cerrar Sesión</button>
+            </div>
+        </div>
+    </nav> 
+     
+   
+ <div class="info">
+    <ul>
+      <li><a data-toggle="modal" data-target="#exampleModalCenter"><img src="../assets/img/iinfo.png"></a></li>
+      <li><a data-toggle="modal" data-target="#exampleModalCenter1"><img src="../assets/img/iques.png"></a></li>
+      <li><a data-toggle="modal" data-target="#exampleModalCenter2"><img src="../assets/img/ibadi.png"></a></li>
+    </ul>
+  </div>
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       <h4>Herramientas de la RedTIL</h4>        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Has click en las diferentes herramientas de la Red para hacer busquedas generales. Busca Temáticas y participa en proyectos compartidos. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn botonn" data-dismiss="modal">Entendido</button>        
+      </div>
+    </div>
+  </div>
+</div>
+   
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4> Haz click en tu foto de usuario e ingresa a tu perfil</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Comienza a interactuar con la comunidad RedTIL, publica contenido, sigue a otros usuarios, comenta sus publicaciones.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn botonn" data-dismiss="modal">Entendido</button>        
+      </div>
+    </div>
+  </div>
+</div>
+   
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>RedTIL</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Es una Red Científica que te permite compartir con la Comunidad de Investigadores e Innovadores en Tecnologías de Información Libres, nace en la Universidad Bolivariana de Venezuela como proyecto de integración científica del país.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn botonn" data-dismiss="modal">Entendido</button>        
+      </div>
+    </div>
+  </div>
+</div>
+       
+
+        
+    <section class="n">
+       
+        <img src="../assets/img/nodote1.png" class="nodote">
+        <div ><img class="nodoteb1" src="../assets/img/nodoboton1.png"></div>
+        <div ><img class="nodoteb2" src="../assets/img/nodoboton1.png"></div>
+        <div ><img class="nodoteb3" src="../assets/img/nodoboton1.png"></div>
+        <div ><img class="nodoteb4" src="../assets/img/nodoboton1.png"></div>
+        <div ><img class="nodoteb5" src="../assets/img/nodoboton1.png"></div>
+        <div ><img class="nodoteb7" src="../assets/img/nodoboton1.png"></div>
+        <div ><img class="nodoteb8" src="../assets/img/nodoboton1.png"></div>
+        
+        
+        <div class="nodote0"><a id="mi_enlace2"><img src="../assets/img/redtillogo11.png" ></a></div>       
+        <div class="nodote1"><a onclick="personas();"><img src="../assets/img/iusernode.png" data-toggle="tooltip" data-placement="bottom" title="Busca personas"></a></div>        
+        <div class="nodote2"><img onclick="notitas();"  src="../assets/img/inotita.png" data-toggle="tooltip" data-placement="bottom" title="Explora los proyectos y tareas que la comunidad desea llevar a cabo"></div>        
+        <div class="nodote3"><img src="../assets/img/imulti.png" data-toggle="tooltip" data-placement="bottom" title="Busca tutoriales, videos compartidos y links de descargas"></div>        
+        <div class="nodote4"><img onclick="libros();" src="../assets/img/ilibro.png" data-toggle="tooltip" data-placement="bottom" title="Libros destacados"></div>        
+        <div class="nodote5"><img onclick="investigaciones();" src="../assets/img/iinves.png" data-toggle="tooltip" data-placement="bottom" title="Investigaciones destacados"></div>       
+        <div class="nodote7"><a data-toggle="modal" data-target="#exampleModalCenter4"><img src="../assets/img/igroup.png" data-toggle="tooltip" data-placement="bottom" title="Grupos creados por los usuarios"></a></div>
+        <div class="nodote8"><a data-toggle="modal" data-target="#exampleModalCenter3"><img src="../assets/img/itag.png" data-toggle="tooltip" data-placement="bottom" title="Tematicas de la RedTIL"></a></div>
+    </section>
+</div>
+ 
+       
+<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Temáticas de la Red de Tecnologías de Información Libres</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <br><form id="tematicas">
+        <table width="100%"><tr>
+        <td><img class="tag" src="../assets/img/tag3d.jpg" id="tresd" alt="" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagrobotica%20(1).jpg" id="robot" alt="" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagred.jpg" alt="" id="red" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagorg.jpg" alt="" id="org_t" onclick="seleccionar(this);"></td>
+        </tr> 
+        <tr>        
+        <td><img class="tag" src="../assets/img/taginter.jpg" alt="" id="t_int" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/taginnov.jpg" alt="" id="innova" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/taghard.jpg" alt="" id="h_lib" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/taggeo.jpg" alt="" id="geo" onclick="seleccionar(this);"></td>
+        </tr>
+        <tr>        
+        <td><img class="tag" src="../assets/img/tagarq.jpg" alt="" id="arc" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/softwarepublico.jpg" alt="" id="sft_pu" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagpro.jpg" alt="" id="pro" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tag1.jpg" alt="" id="inter" onclick="seleccionar(this);"></td>
+        </tr> 
+        <tr>        
+        <td><img class="tag" src="../assets/img/tagiot.jpg" alt="" id="iot" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagdatos.jpg" alt="" id="datos_a" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/taggob.jpg" alt="" id="gob_dig" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagblock.jpg" alt="" id="block" onclick="seleccionar(this);"></td>
+        </tr> 
+        <tr>        
+        <td><img class="tag" src="../assets/img/tagedu.jpg" alt="" id="edu_t" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagbook.jpg" alt="" id="cont_edu" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagapp.jpg" alt="" id="apps" onclick="seleccionar(this);"></td>
+        <td><img class="tag" src="../assets/img/tagai.jpg" alt="" id="ai" onclick="seleccionar(this);"></td>
+        </tr></table></form> 
+            
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn botonn" value="Vincular usuarios">
+        <button type="button" class="btn botonn" data-dismiss="modal">Buscar material</button>        
+      </div>
+    </div>
+  </div>
+</div>
+       
+<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Lista de Grupos</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">        
+            
+      </div>
+      <div class="modal-footer">        
+        <button type="button" class="btn botonn" data-dismiss="modal">Ver</button>        
+      </div>
+    </div>
+  </div>
+</div>
+       
+       
+        <script src="../assets/sweet_alert/sweetalert2.min.js"></script>
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/jquery.validate.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.js"></script>
+        <script src="../assets/js/loader.js"></script>
+        <script src="../assets/js/inicio.js"></script>  
+        
+        
+</body>
+</html>

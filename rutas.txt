@@ -1,0 +1,4 @@
+listado:  app/pages/buscar/listado 
+cuenta: app/pages/cuenta
+
+

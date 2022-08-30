@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../assets/img/redtillogo.png">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/icons/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/sweet_alert/sweetalert2.min.css">
+    <link rel="stylesheet" href="../assets/jcrop/css/jquery.Jcrop.css" type="text/css" />
+    <title>RedTIL</title>
+</head>
+
+<body>
+
+    <div id="loader-page" class="loader-page"></div>
+<nav class="navbar ">
+    <a class="navbar-brand"><img class="img-redtil1" src="../assets/img/redtiwhite.png" alt=""></a>
+    <div class="navbar-right">
+        <div class="dropdown">
+            <a class="navbar-right" id="ad_bot"><img style="visibility: hidden; opacity: 0;" id="ad_bot_img" src="../assets/img/admicon.png" class="avatar1"></a>
+            <a href="../html/inicio.html"><img src="../assets/img/red.png" class="avatar1"></a>
+           
+            <a id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/img/Husky.jpg" class="avatar2" id="ava_img"></a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <h6 class="dropdown-header" id="avatar"></h6>
+                <a id="mi_enlace"><button class="dropdown-item" type="button"><img src="../assets/img/home.png" class="imgp">Inicio</button></a>
+                <button class="dropdown-item" type="button" onclick="modificarme();"><img src="../assets/img/confg.png" class="imgp">Mi Cuenta</button>
+                <button class="dropdown-item" type="button" id="log_out" onclick="out();"><img src="../assets/img/closeg.png" alt="" class="imgp">Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="nomuser" >
+                <p id="user_name">Username</p>
+            </div>
+            <div class="btn nomuserb" id="seguir2">
+                <button type="submit" style="background: transparent;" id="seguir" class="btn">Seguir</button>
+            </div>
+        <a onclick="notitas2()"><div class="box_notita1" id="here">
+        </div>
+        </a>
+        <div id="here2">
+        </div>
+        </div>
+
+         <div class="notify" id="list_noti">
+                    
+         </div> 
+
+                <div class="col-md-6">
+
+                    <div class="box-perfil">
+                        <input type="hidden" id="url_temp">
+                        <div id="contenido4">
+                        <iframe src="mapa.html" id="mapa" scrolling="no" width="100%" height="700px" style="border: none;"></iframe>    
+                        </div>
+                        <div id="contenido"></div>                            
+                    </div>
+              </div>  
+       
+        <div class="col-md-3">
+            <div class="busqued">
+                <input type="search" id="busqueda">
+                <img src="../assets/img/buscarg.png" class="imgpp" alt="" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" id="buscador" aria-controls="collapseExample" onclick="buscar();">
+                <div class="collapse" id="collapseExample1">
+                </div>
+            </div>
+
+            <div id="people">
+                
+            </div>
+
+            <div id="data">
+                
+            </div>                
+                
+            <div class="box-plus">
+                <img class="pluss" onclick="abre_plus();" src="../assets/img/plus.png" alt="">
+            </div>
+        
+            <div class="box-plus-icon" id="box-plus-icon">
+                <img src="../assets/img/iinves.png" onclick="registrar_inv(); cierra_plus();" data-toggle="tooltip" data-placement="bottom" title="Registrar nueva Investigación">
+                <img src="../assets/img/ilibro.png" onclick="registrar_lib(); cierra_plus();" data-toggle="tooltip" data-placement="bottom" title="Registrar nuevo Contenido">
+                <img src="../assets/img/inotita.png" onclick="registrar_pen(); cierra_plus();" data-toggle="tooltip" data-placement="bottom" title="Registrar nueva tarea">
+                <img src="../assets/img/igroup.png" data-toggle="tooltip" data-placement="bottom" title="Crear un grupo">
+                <img class="cross" onclick="cierra_plus();" src="../assets/img/cross.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+        </div>
+
+
+        <script src="../assets/sweet_alert/sweetalert2.min.js"></script>
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.js"></script>
+        <script src="../assets/js/loader.js"></script>
+        <script src="../assets/js/qrcode.js"></script>
+        <script src="../assets/js/perfil.js"></script>
+        <script src="../assets/js/bootstrap.bundle.js"></script>
+        <script src="../assets/js/vista_doc.js"></script>
+        <script src="../assets/js/jquery.validate.js"></script>
+        <script src="../assets/js/additional-methods.js"></script>
+        <script src="../assets/jcrop/js/jquery.Jcrop.js"></script>
+        
+</body>
+
+</html>
